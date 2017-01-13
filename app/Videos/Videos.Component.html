@@ -1,0 +1,63 @@
+
+<div class="demo-list-action mdl-list" *ngIf="videoList">
+
+
+  <div class="mdl-list__item"  *ngFor="let v of videoList" [class.playing]="v==activatedVideo">
+   
+
+
+ <!------------------------------------------>
+ <div class="mdl-cell mdl-cell--6-col"> 
+   <div class="demo-card-square mdl-card mdl-shadow--2dp">
+
+<div class="mdl-grid">
+
+<div class="mdl-cell mdl-cell--6-col">
+
+  <div class="mdl-card__title mdl-card--expand">
+     <div class="mdl-cell--6-col">
+    <a href="#" (click)="onClick()"><img src="{{v.snippet.thumbnails.high.url}}" ></a>
+     </div><!-- end of mdl-cell 6 coll -->
+  </div><!----end of  mdl card title -->
+  
+</div><!-- end of card mdl 6-->
+
+<div class="mdl-cell mdl-cell--6-col">
+
+
+<h3> HI there </h3>
+
+
+</div><!-- end of card 6--->
+
+</div><!-- end of mdl-grid-->  
+
+
+</div><!---nd of col-6-->
+
+
+<!------------------------------------>
+ <div class="mdl-cell mdl-cell--6-col"> </div>
+  
+
+  <!-- Video details-- -->
+
+<!-- -------------------------------- -->
+
+
+  </div>
+
+
+</div> <!----end of list******>
+
+
+
+
+<!-- Colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+Next
+</button>
+<!-- Accent-colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+  Previous
+</button>

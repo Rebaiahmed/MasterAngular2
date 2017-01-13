@@ -1,0 +1,48 @@
+<header class="mdl-layout__header">
+
+  			<div class="mdl-layout__header-row">
+  				<!-- Title -->
+  				<span class="mdl-layout-title">Master Angular2</span>
+  				<!-- Add spacer, to align navigation to the right -->
+  				<div class="mdl-layout-spacer"></div>
+  				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+  					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+  						<i class="material-icons">search</i>
+  					</label>
+  					<div class="mdl-textfield__expandable-holder">
+  						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp" />
+  					</div>
+  				</div>
+
+
+          <nav class="mdl-navigation">
+  <a id="submenu" class="mdl-navigation__link" [routerLink]="['/Videos']">Videos</a>
+  <a class="mdl-navigation__link" [routerLink]="['/tutorials']">Tutorials</a>
+  <a class="mdl-navigation__link" [routerLink]="['/blogs']">Blogs</a>
+  <a class="mdl-navigation__link" [routerLink]="['/quizz']">Quizz</a>
+  <a class="mdl-navigation__link" [routerLink]="['/About']">About Me</a>
+</nav>
+
+<!-- sub menu only visible when clicked on the link above -->
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="submenu">
+  <li class="mdl-menu__item">Some Action</li>
+  <li class="mdl-menu__item">Another Action</li>
+  <li disabled class="mdl-menu__item">Disabled Action</li>
+  <li class="mdl-menu__item">Yet Another Action</li>
+</ul>
+            <button id="demo-menu-lower-left"
+        class="mdl-button mdl-js-button mdl-button--icon">
+           <i class="material-icons">more_vert</i>
+           </button>
+
+
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-left">
+  <li class="mdl-menu__item">Profile / Sign In with github</li>
+  <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Favorites</li>
+  <li class="mdl-menu__item">Messages</li>
+</ul>
+
+  			</div>
+  		</header>
